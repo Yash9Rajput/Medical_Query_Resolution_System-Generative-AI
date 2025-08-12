@@ -1,1 +1,0 @@
-# Medical_Query_Resolution_System-Generative-AI
