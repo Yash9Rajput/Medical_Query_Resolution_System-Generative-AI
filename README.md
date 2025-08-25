@@ -82,3 +82,5 @@ python store_index.py
 Run the Flask App
 
 python app.py
+
+[▶️ Watch Demo](media/demo.mp4)
