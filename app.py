@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def home():
-    return "Medical Query Resolution System is running ✅"
+    return "Medical Query Resolution System is running."
 
 @app.route("/ask", methods=["POST"])
 def ask():

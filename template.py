@@ -14,28 +14,10 @@ list_of_files = [
     "research/trials.ipynb"
 ]
 
-def get_icon(filepath: Path) -> str:
-    if filepath.is_dir():
-        return "📁"
-    ext = filepath.suffix.lower()
-    if ext == ".py":
-        return "🐍"      # Python file
-    elif ext == ".ipynb":
-        return "📓"      # Jupyter Notebook
-    elif ext == ".env":
-        return "🔐"      # Env file (security)
-    elif ext == ".txt":
-        return "📝"      # Text file
-    elif ext == ".json":
-        return "🗂️"      # JSON file
-    else:
-        return "📄"      # Generic file icon
-
 
 for filepath in list_of_files:
     filepath = Path(filepath)
     filedir, filename = os.path.split(filepath)
-    icon = get_icon(filepath)
     
     
     if filedir !="":
